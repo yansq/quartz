@@ -1,0 +1,10 @@
+# Oracle 递归查询
+
+```sql
+SELECT
+    ORG_ID,
+    ORG_NAME
+FROM CRM.GF_ORG
+START WITH ORG_ID = 'F02428'
+CONNECT BY PRIOR PARENT_ID = ORG_ID
+```

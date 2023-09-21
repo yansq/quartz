@@ -1,0 +1,3 @@
+# @RestController
+
+`@RestController` = @Controller + [[@ResponseBody]]

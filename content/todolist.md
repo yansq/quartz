@@ -1,0 +1,47 @@
+```dataview
+list from #TODO 
+```
+
+- 算法
+    - [x] [[数据结构&算法/UltraLearning/链表|链表]]
+    - [ ] [[数据结构&算法/UltraLearning/动态规划|动态规划]]
+    - [ ] [[滑动窗口]]
+    - [ ] [[Binary Search]]
+- redis
+    - [x]  [[Database/redis/redis 为什么快]]
+    - [x] [[Database/redis/Redis 数据类型]]
+    - [ ]  Redis 与数据库一致性
+    - [x] 集群 
+    - [x] 问题（雪崩、穿透、脑裂、复制风暴）
+- 架构
+    - [x] 分布式 ID
+    - [ ]  [[分布式锁]]
+    - [ ] distributed locks
+    - [ ] 分库分表
+    - [ ]  DDD(Domain-Driven Design)
+    - [ ] Design Patterns
+        - [ ] [[单例模式|Singleton]]
+- Spring（实作）
+    - [x] Filter / Interceptor / AOP
+    - BeanFactory / ApplicationContext
+    - Aware 接口
+    - FactoryBean
+    - Proxy 代理类
+- microservices components
+    - [ ]  registry and discovery
+    - [ ] circuit breaker
+    - [ ] configuration
+    - [ ] distributed tracing 
+- MySQL
+    - index
+    - SQL 优化
+- Java
+    - 并发
+        - [ ] [[volatile]]
+        - [ ] [[synchronized]]
+        - [ ] 两个线程轮流打印
+    - JVM
+        - 调优
+    - 垃圾回收
+- [x] ES
+- [Kafka](https://blog.51cto.com/u_14932245/4340967)
