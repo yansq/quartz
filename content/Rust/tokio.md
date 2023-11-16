@@ -45,6 +45,7 @@ Task 的[[Rust/生命周期|生命周期]]为`'static`，这意味着如果直�
 
 ```rust
 use tokio::task; 
+
 #[tokio::main] 
 async fn main() { 
     let v = vec![1, 2, 3]; 

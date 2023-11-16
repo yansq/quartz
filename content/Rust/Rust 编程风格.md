@@ -11,3 +11,19 @@ for line_ in reader.lines() {
     println!("{} ({} bytes long)", line, line.len());
 }
 ```
+
+---
+
+针对可能为null的值，使用 option 初始化：
+```rust
+let five = Some(5);
+```
+
+---
+
+hashmap，当 value 不存在时设置默认值并插入：
+```rust
+let count = hashmap.entry(String::from("key")).or_insert(0);
+*count += 1;
+```
+

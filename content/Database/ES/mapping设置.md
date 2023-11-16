@@ -9,7 +9,6 @@
 - positions：记录doc id / term frequencies / term position
 - offsets：记录doc id / term frequencies / term position / character offects
 
-
 ## index
 
 false：不建立倒排索引

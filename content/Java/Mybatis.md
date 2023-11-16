@@ -120,5 +120,6 @@ FROM POST P
 
 ## 缓存
 
-- 一级缓存：基于 PerpetualCache 的 HashMap 缓存，存储作用域为 SqlSession。当 Session flush 或 close 后，缓存清空。MyBatis 默认打开一级缓存
-- 二级缓存：机制相同，存储作用域为 Mapper，可以在多个 SqlSession 之间共享，并且可以自定义存储源，如 Ehcache。
+- 一级缓存：基于 PerpetualCache 的没有容量限定的 HashMap 缓存，存储作用域为 SqlSession。当 Session flush 或 close 后，缓存清空。MyBatis 默认打开一级缓存，增删改操作会导致缓存失效。一级缓存无法自定义
+- 二级缓存：机制相同，存储作用域为 Mapper，可以在多个 SqlSession 之间共享，并且可以自定义存储源，如 Ehcache。清除策略包括：LRU、FIFO、SOFT、WEAK
+- 自定义缓存，必须实现 `org.apache.ibatis.cache.Cache` 接口，然后在 Mapper 文件里配置使用自定义的缓存对象。

@@ -7,11 +7,11 @@ use std::cell::Cell;
 
 fn main() {
     let c = Cell::new("asdf");
-    let one = &c();
-    let two = &c();
+    let one = &c;
+    let two = &c;
     one.set("qwer");
     two.set("tyui");
-    println!("{},{}", one, two);
+    println!("{:?},{:?}", one, two);
 }
 ```
 

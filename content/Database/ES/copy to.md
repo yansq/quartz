@@ -1,3 +1,5 @@
+# copy to
+
 The `copy_to` parameter allows you to copy the values of multiple fields into a group field, which can be queried as a single field. You can use copy_to to improve search speeds if you often search multiple fields.
 
 ```json

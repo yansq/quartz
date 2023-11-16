@@ -10,6 +10,8 @@
 
 ## 与[[Rust/Rc|Rc]]组合使用
 
+A common way to use `RefCell<T>` is in combination with `Rc<T>`. Recall that `Rc<T>` lets you have multiple owners of some data, but it only gives immutable access to that data. If you have an `Rc<T>` holding a `RefCell<T>`, you can get a value with multiple owners _and_ that you can mutate!
+
 ```rust
 use std::cell::RefCell;
 use std::rc::Rc;

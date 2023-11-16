@@ -28,6 +28,6 @@ Get /_cat/nodes?h=name,heapCurrent,fielddataMemory,queryCacheMemory,requestCache
 Get /_cluster/reroute?retry_failed
 ```
 
-## Cat结果在Elasticseach-head插件不显示
+## Cat 结果在 Elasticseach-head 插件不显示
 
 通过浏览器开发者工具，在网络请求返回中可以看到数据。

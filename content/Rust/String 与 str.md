@@ -1,6 +1,6 @@
 # String 与 str
 
-String 的本质是一个 u8 的[[Rust/Vector|Vector]]。
+`String` 是在 Rust 标准库中的内容，是一个可变的字符串类型，本质是一个 u8 [[Rust/Vector|Vector]]。
 
 ```rust
 struct String {

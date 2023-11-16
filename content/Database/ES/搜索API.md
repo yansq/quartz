@@ -16,9 +16,24 @@ ES有两种方法执行搜索：
 
 - `_source`：返回文档中的哪些字段，如`"_source": ["account_number", "balance"]`
 - `match`: 字段是否匹配（包含），如`"query":{ "match": {address: "mill lane"} }`（address字段中是否包含mill或lane），ES会进行对查询进行分词，然后匹配，任一分词结果命中都会返回
-- `match_phrase`：同`match`，所有分词结果命中才会返回，并且不将空格做为分隔符，而是一个整体，可通过`slop`调节匹配强度
+- `match_phrase`：同`match`，所有分词结果命中，并保证顺序正确，可通过`slop`调节匹配强度
 - `term`：代表完全匹配，不进行分词。使用`term`查询需要确认字段是否被分析（analyzed），详见[[Database/ES/term匹配示例|示例]]。
 - `bool`：执行布尔逻辑
+
+match_phrae:
+```json
+"query": {
+  "bool": {
+    "should": [{
+        "match_phrase": {
+           "CUST_NM.char: {
+             "query": \"波行\"",
+             "slop": 1
+        }
+    }]
+  }
+}
+```
 
 搭配使用`must`进行与运算，另有`must_not`子句：
 ```json
