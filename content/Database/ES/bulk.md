@@ -21,3 +21,6 @@ POST _bulk
 { "update": {"_id": "1", "_index": "test"} }
 { "doc": {"field2": "value2"} }
 ```
+
+`_bulk`中的一条操作指令可能占一行或两行。
+
